@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trò chơi Tài Xỉu</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Trò chơi Tài Xỉu</h1>
+        <p>Hãy đoán xem tổng của 3 con xúc xắc sẽ là nhỏ hơn 11 (Tài) hay lớn hơn 10 (Xỉu).</p>
+        <p>Bạn có thể đặt cược bằng số tiền và nhận lại gấp đôi số tiền đó nếu đoán đúng.</p>
+        <div class="input-container">
+            <label for="bet-amount">Số tiền cược:</label>
+            <input type="number" id="bet-amount" min="1" step="1">
+        </div>
+        <div class="input-container">
+            <label for="bet-choice">Đặt cược (Tài/Xỉu):</label>
+            <select id="bet-choice">
+                <option value="tai">Tài</option>
+                <option value="xiu">Xỉu</option>
+            </select>
+        </div>
+        <button id="play-button">Chơi</button>
+        <div id="result" class="result-container"></div>
+        <button id="play-again-button" class="hidden">Chơi lại</button>
+        <p id="balance">Số dư hiện tại: $1000</p>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
